@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/Human-Benchmark/',   
+  base: '/Human-Benchmark/',   // NAMA REPO
+  build: {
+    outDir: 'docs',            // SESUAI GITHUB PAGES
+  },
   plugins: [react()],
 })
